@@ -1,0 +1,12 @@
+{
+    "**/*.{css,scss}": [
+        "stylelint --ignore-path .gitignore '**/*.{css,scss}' --fix",
+        "prettier --ignore-path .gitignore '**/*.{css,scss}' --write",
+        "git add"
+    ],
+    "**/*.{js,jsx}": [
+        "eslint --ignore-path .gitignore '**/*.{js,jsx}' --fix",
+        "prettier --ignore-path .gitignore '**/*.{js,jsx}' --write",
+        "git add"
+    ]
+}
